@@ -1,8 +1,12 @@
 import React from 'react'
+import { AiFillLinkedin } from 'react-icons/ai'
+import {AiFillGithub} from 'react-icons/ai'
+import {AiFillMail} from 'react-icons/ai'
+import {BsFillPersonLinesFill} from 'react-icons/bs'
 
 function Contact() {
   return (
-    <div name='Contact' className='bg-gradient-to-b from-black to-gray-500 h-screen w-full'>
+    <div name='Contact' className='bg-gradient-to-b from-black to-gray-500 h-auto w-full'>
         <div className='text-white p-4 max-w-screen-lg h-full mx-auto justify-center flex flex-col'>
             <div className=''>
                 <p className='text-4xl inline font-bold border-b-4 border-gray-500'>Contact</p>
@@ -23,6 +27,16 @@ function Contact() {
                      <textarea name='message' placeholder='Enter your message' className='bg-transparent border-2 p-2 rounded-md my-3 text-white focus:outline-none' rows={10}></textarea>
                      <button className='bg-gradient-to-b from-cyan-500 to-blue-500 w-max px-6 py-3 text-white rounded-md hover:scale-105 duration-300 cursor-pointer mx-auto'>Send</button>
                 </form>
+            </div>
+
+            <div className='lg:hidden'>
+            <p className='text-center pt-5'>Or</p>
+            <div className='flex justify-between w-2/4 mx-auto pt-5'>
+              <a href='https://linkedin.com/in/nishitasahajwani'><AiFillLinkedin size={30}/></a>
+              <a href='https://github.com/NishitaSahajwani'><AiFillGithub size={30}/></a>
+              <a href='mailto:nishitasahajwani1401@gmail.com'><AiFillMail size={30}/></a>
+              <a href='/Resume.pdf'><BsFillPersonLinesFill size={30}/></a>
+            </div>
             </div>
         </div>
     </div>
